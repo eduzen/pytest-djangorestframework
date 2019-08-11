@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='pytest-djangorestframework',
-    version='0.1.1',
+    version='0.1.2',
     author='Eduardo Enriquez',
     author_email='eduardo.a.enriquez@gmail.com',
     maintainer='Eduardo Enriquez',
@@ -44,8 +44,6 @@ setup(
         'License :: OSI Approved :: BSD License',
     ],
     entry_points={
-        'pytest11': [
-            'djangorestframework = pytest_djangorestframework',
-        ],
+        'pytest11': ['djangorestframework = pytest_djangorestframework']
     },
 )

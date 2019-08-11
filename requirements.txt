@@ -4,6 +4,7 @@ setuptools
 django
 django-restframework
 tox
+black
 wheel
 twine
 flake8
