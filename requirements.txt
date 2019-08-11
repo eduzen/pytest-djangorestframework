@@ -2,6 +2,7 @@
 -e .
 setuptools
 django
+django-restframework
 tox
 wheel
 twine
