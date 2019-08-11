@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from rest_framework import APIClient, APIRequestFactory
+from rest_framework.test import APIClient, APIRequestFactory
 
 
 def test_api_client(api_client):

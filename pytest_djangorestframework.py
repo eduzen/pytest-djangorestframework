@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-
 import pytest
 
-from rest_framework import APIClient, APIRequestFactory
+from rest_framework.test import APIClient, APIRequestFactory
 
 
 @pytest.fixture()

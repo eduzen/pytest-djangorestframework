@@ -2,7 +2,7 @@
 -e .
 setuptools
 django
-django-restframework
+djangorestframework
 tox
 black
 wheel
