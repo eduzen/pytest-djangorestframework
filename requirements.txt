@@ -1,0 +1,7 @@
+
+-e .
+setuptools
+django
+tox
+wheel
+flake8
