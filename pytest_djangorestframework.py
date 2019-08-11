@@ -2,20 +2,18 @@
 
 import pytest
 
-
-def pytest_addoption(parser):
-    group = parser.getgroup('djangorestframework')
-    group.addoption(
-        '--foo',
-        action='store',
-        dest='dest_foo',
-        default='2019',
-        help='Set the value for the fixture "bar".'
-    )
-
-    parser.addini('HELLO', 'Dummy pytest.ini setting')
+from rest_framework import APIClient, APIRequestFactory
 
 
-@pytest.fixture
-def bar(request):
-    return request.config.option.dest_foo
+@pytest.fixture()
+def api_client():
+    """A Django RestFramework test client instance."""
+
+    return APIClient()
+
+
+@pytest.fixture()
+def api_rf():
+    """A Django RestFramework RequestFactory instance"""
+
+    return APIRequestFactory()
